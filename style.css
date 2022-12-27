@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+html, body{
+   position: relative;
+   height: 100%;
+}
+
+body{
+   background-color: #fffdfa;
+   margin: 0;
+   padding: 0;
+}
+
+a{
+   text-decoration: none; 
+   color: inherit;
+}
+
+ul{
+   margin: 0;
+}
+
+li{
+   list-style: none; 
+   margin: 0;
+}
+
+.frame{
+   margin: 30px 150px;
+   display: flex;
+   flex-direction: column;
+}
+
+/*header*/
+
+#header{
+   height: 100vh;
+}
+
+.h_top{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.logo{
+   width: 20%;
+   display: flex;
+}
+
+.logo img{
+   width: 90px;
+}
+
+.menu{
+   width: 80%;
+   display: flex;
+   justify-content: flex-end;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+}
+
+.menu>li{
+   margin-left: 40px;
+   margin-top: 20px;
+}
+
+.menu a{
+   color: #000;
+}
+
+.menu a:hover{
+   color: #fff;
+   transition: 0.3s;
+}
+
+.dashboard{
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+}
+
+.comment{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 500;
+   font-size: 50px;
+   line-height: 0;
+}
+
+
+.sample{
+   background: pink;
+   -webkit-text-stroke: 1px black;
+}
+
+.sample:hover{
+   background-color: transparent;
+   color: white;
+   -webkit-text-stroke: 1px black;
+   transition: none;
+}
+
+.highlight{
+   color: white;
+   -webkit-text-stroke: 1px black;
+}
+
+.hightlight:hover{
+   background-color: pink;
+   color: black;
+   transition: none;
+}
+
+.type1:hover{
+   background-color: rgb(255, 235, 204);
+}
+
+.type2:hover{
+   background-color: rgb(217, 194, 255);
+}
+
+.type3:hover{
+   background-color: rgb(169, 206, 255);
+}
+
+.english-comment{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 100;
+   font-size: 15px;
+   font-style: italic;
+   letter-spacing: -0.3px;
+}
+
+
+/*banner*/
+
+#banner{
+   height: 100vh;
+}
+
+.profile-title{
+   margin: 100px;
+}
+
+.profile-section{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+
+   margin: 100px;
+}
+
+.introduction{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.profile-title{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 35px;
+   color: #5f5a56;
+}
+
+.profile-picture{
+   margin-top: 30px;
+   width: 350px;
+}
+
+.profile-comment{
+   margin: 40px 0 0 100px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+}
+
+.profile-t{
+   font-weight: 600;
+   background: rgb(255, 210, 218);
+   width: 92px;
+
+   margin-bottom: 50px;
+}
+
+.profile-comment p{
+   margin-bottom: -20px;
+}
+
+.profile-license{
+   margin: 40px 0 0 100px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+}
+
+.license-t{
+   font-weight: 600;
+   background: rgb(180, 221, 255);
+   width: 92px;
+
+   margin-bottom: 50px;
+}
+
+.skill{
+   margin-left: 440px;
+   margin-top: -150px;
+}
+
+.skill-t{
+   font-weight: 600;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   background: rgb(156, 206, 160);
+   width: 62px;
+
+   margin-left: 8px;
+   margin-bottom: 50px;
+}
+
+.skill img{
+   width: 70px;
+}
+
+.skill img:nth-child(5){
+   width: 65px;
+   margin-left: 10px;
+   margin-right: 18px;
+}
+
+.skill img:nth-child(6){
+   width: 65px;
+}
+
+/*contents*/
+
+#contents{
+   height: 100vh;
+}
+
+/*recent works*/
+
+.recent-menu{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   font-weight: 700;
+   color: #C2B4AB;
+
+   text-align: right;
+   margin-top: 100px;
+}
+
+.recent-work{
+   display: flex;
+   flex-direction: column;
+}
+
+.article{
+   display: flex;
+   flex-direction: row;
+   margin-top: 160px;
+   margin-bottom: 120px;
+   align-items: center;
+}
+
+.thumbnail{
+   width: 700px;
+   border: 2px solid rgb(197, 197, 197);
+}
+
+.article-info{
+   margin: 0 40px;
+}
+
+.article-name{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 30px;
+   margin-top: 0;  
+   margin-bottom: 30px;
+}
+
+.article-comment{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+.more{
+   width: content;
+   height: content;
+   float: right;
+   margin-right: 10px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   background-color: transparent; 
+   border: none;
+   outline: none;
+   padding: 0;
+}
+
+#name1{
+   position: relative;
+   
+   font-size: 40px;
+   color: #c0a06f;
+}
+
+#contents2{
+   height: 100vh;
+}
+
+#name2{
+   text-align: left;
+   position: relative;
+
+   font-size: 40px;
+   color: #ff8e97;
+}
+
+.article:nth-child(2){
+   display: flex;
+   flex-direction: row;
+   margin-top: 160px;
+   margin-bottom: 120px;
+}
+
+/*design section*/
+
+#design{
+   width: 100%;
+   height: 100vh;
+}
+
+.b2{
+   width: 100%; 
+   height: 600px; 
+   display: flex; 
+   justify-content: space-around;
+}
+
+.mySwiper2 .swiper{
+   width: 100%; 
+   height: 100%;
+}
+
+.mySwiper2 .swiper a{
+   width: 100%; 
+   height: 450px; 
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center;
+}
+
+.mySwiper2 .swiper-wrapper{
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center;
+}
+
+.mySwiper2 .swiper-slide{
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   text-align: center;
+}
+
+.mySwiper2 .swiper-slide img{
+   height: 400px;
+}
+
+.mySwiper2 .swiper-pagination{
+   position: absolute; 
+   top: 90%; 
+   display: flex; 
+   justify-content: center;
+}
+
+.mySwiper2 .swiper-pagination-bullet{
+   border-radius: 10; 
+   opacity: 1; 
+   background: #999;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active{
+   background: #fff; 
+   border: 1px solid #999;
+   position: relative; 
+   top: -1px;
+   box-sizing: content-box;
+}
+
+
+/*footer*/
+
+#footer{
+   width: 100%;
+   height: 50vh;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   font-weight: 700;
+
+   color: #3d3937;
+   border-top: 1px solid #3d3937;
+}
+
+.link>a{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+   color: #837973;
+   margin: 0 30px;
+}
+
+.link>a:hover{
+   color: #fff;
+   transition: 0.3s;
+}
+
+#footer>p{
+   font-family: 'Noto Sans KR', sans-serif;
+   color: rgb(136, 136, 136);
+   font-weight: 500;
+   font-size: 20px;
+   font-style: italic;
+
+   margin-top: 100px;
+}
