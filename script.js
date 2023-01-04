@@ -1,5 +1,5 @@
 //scroll effect
-cnt=0;
+/*cnt=0;
         time=0;
         $("html").animate({scrollTop:0},400);
         $(document).on("mousewheel",
@@ -21,6 +21,7 @@ cnt=0;
           }
          })
         })
+        */
 
 //design section swiper
       var swiper = new Swiper(".mySwiper2", {
@@ -37,4 +38,15 @@ cnt=0;
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {//화살표 여부 설정
+          nextEl: ".swiper_btn_next",
+          prevEl: ".swiper_btn_prev",
+        },
       });
+
+
+//click popup
+      var img = document.getElementsByClassName('click_img_1');
+      for (var x = 0; x < img.length; x++){
+        img.item(x).onclick=function() {window.open(this.src)};
+      }

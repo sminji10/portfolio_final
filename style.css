@@ -389,6 +389,31 @@ li{
    box-sizing: content-box;
 }
 
+.mySwiper2 .slide_arrow{
+   position: absolute; 
+   z-index: 20; 
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+   cursor: pointer;
+}
+
+.mySwiper2 .swiper_btn_next{
+   position: absolute; 
+   top: 530px; 
+   right: 700px; 
+   width: 10px; 
+   padding: 5px 10px;
+}
+
+.mySwiper2 .swiper_btn_prev{
+   position: absolute; 
+   top: 530px; 
+   left: 700px; 
+   width: 10px;
+   padding: 5px 10px;
+}
+
 
 /*footer*/
 
@@ -431,4 +456,84 @@ li{
    font-style: italic;
 
    margin-top: 100px;
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+
+   .frame{
+      margin: 30px 50px;
+   }
+
+   #header{
+      height: 70vh;
+   }
+
+   .logo{
+      width: 10%;
+   }
+
+   .logo img{
+      width: 70px;
+   }
+
+   .menu{
+      font-size: 15px;
+   }
+
+   .menu>li{
+      margin-top:50px;
+   }
+
+   .comment{
+      font-size: 50px;
+   }
+
+   #banner{
+      height: 150vh;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .profile-title{
+      margin-left: 50px;
+      margin-bottom: -50px;
+   }
+
+   .profile-picture{
+      width: 180px;
+      position: relative;
+      margin: 0;
+      margin-left: -20px;
+   }
+
+   .profile-comment{
+      margin-left: 40px;
+      font-size: 18px;
+   }
+
+   .profile-license{
+      margin-left: -20px;
+      font-size: 18px;
+   }
+
+   .skill{
+      margin-left: 50;
+      margin-top: 0;
+      font-size: 18px;
+   }
+
+   .skill img{
+      width: 50px;
+   }
+
+   .skill img:nth-child(5){
+      width: 40px;
+      margin-left: 5px;
+      margin-right: 0;
+   }
+   
+   .skill img:nth-child(6){
+      width: 40px;
+      margin-left: 5px;
+   }
 }
