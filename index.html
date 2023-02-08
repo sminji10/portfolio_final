@@ -14,6 +14,7 @@
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
       <script src="script.js" defer type="text/javascript"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
    </head>
 
@@ -27,9 +28,9 @@
                <a href="index.html"><img src="logo.png" alt="x"></a>
             </div>
             <ul class="menu">
-               <li><a href="index.html">PROFILE</a></li>
-               <li><a href="index.html">WORK</a></li>
-               <li><a href="index.html">CONTACT</a></li>
+               <li><a href="#banner">PROFILE</a></li>
+               <li><a href="#contents">WORK</a></li>
+               <li><a href="#footer">CONTACT</a></li>
             </ul>
             </div><!--h_top end-->
 
@@ -113,21 +114,21 @@
             <h5 class="recent-menu">RECENT WORKS</h5>
             <div class="box b2">
                <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper box_gallery">
                  <div class="swiper-slide">
-                  <a href="#"><img src="slider_1_design.jpg" alt="x" class="click_img_1"></a>
+                  <a href="click_img_1.jpg"><img src="slider_1_design.jpg" alt="x"></a>
                  </div>
                  <div class="swiper-slide">
-                  <a href="#"><img src="slider_2_design.jpg" alt="x"></a>
+                  <a href="click_img_2.jpg"><img src="slider_2_design.jpg" alt="x"></a>
                  </div>
                  <div class="swiper-slide">
-                  <a href="#"><img src="slider_3_design.jpg" alt="x"></a>
+                  <a href="click_img_3.jpg"><img src="slider_3_design.jpg" alt="x"></a>
                  </div>
                  <div class="swiper-slide">
-                  <a href="#"><img src="slider_4_design.jpg" alt="x"></a>
+                  <a href="click_img_4.jpg"><img src="slider_4_design.jpg" alt="x"></a>
                  </div>
                  <div class="swiper-slide">
-                  <a href="#"><img src="slider_1_design.jpg" alt="x"></a>
+                  <a href="click_img_6.jpg"><img src="slider_5_design.jpg" alt="x"></a>
                  </div>
                  <div class="swiper-slide">
                   <a href="#"><img src="slider_2_design.jpg" alt="x"></a>
@@ -147,6 +148,21 @@
                 <div class="swiper-pagination"></div>
                </div>
                <!--swiper2 end-->
+
+               <!--<div class="slide-overlay">
+                  <button class="close-btn">close</button>
+                  <button class="slide-btn --prev">prev</button>
+                  <button class="slide-btn --next">next</button>
+                  <div class="slide__container">
+                     <ul class="slides">
+                        <li><img src="slider_1_design.jpg"></li>
+                        <li><img src="slider_2_design.jpg"></li>
+                        <li><img src="slider_3_design.jpg"></li>
+                        <li><img src="slider_4_design.jpg"></li>
+                     </ul>
+                  </div>
+               </div><!--popup-->
+
               </div>
               <!--b2 end-->
          </nav>
@@ -159,6 +175,8 @@
             </div>
             <p>Feel free to contact me!</p>
          </footer><!--footer end-->
+
+         <a class="topBtn" href="#">TOP</a>
 
       </div><!--frame end-->
    </body>

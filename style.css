@@ -74,6 +74,16 @@ li{
    transition: 0.3s;
 }
 
+.menu_wrap{
+   position:absolute; 
+   cursor:pointer; 
+   right:150px; 
+   top:-400px; 
+   height:100vh; 
+   display:flex; 
+   align-items:center;
+}
+
 .dashboard{
    display: flex;
    flex-direction: column;
@@ -400,7 +410,7 @@ li{
 
 .mySwiper2 .swiper_btn_next{
    position: absolute; 
-   top: 530px; 
+   top: 572px; 
    right: 700px; 
    width: 10px; 
    padding: 5px 10px;
@@ -408,12 +418,37 @@ li{
 
 .mySwiper2 .swiper_btn_prev{
    position: absolute; 
-   top: 530px; 
+   top: 572px; 
    left: 700px; 
    width: 10px;
    padding: 5px 10px;
 }
 
+.slide__container{
+   position: absolute;
+   width: 500px;
+   height: 300px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+}
+
+.slides{
+   width: 600%;
+   position: relative;
+   left: 0;
+}
+
+.slides::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.slides>li{
+   float: left;
+}
 
 /*footer*/
 
@@ -456,6 +491,22 @@ li{
    font-style: italic;
 
    margin-top: 100px;
+}
+
+a.topBtn { 
+   width: 60px;
+   height: 60px;
+   background: #C2B4AB;
+   color:#fff;
+   opacity: 80%;
+   line-height: 60px;
+   text-align: center;
+   font-size: 15px;
+	position: fixed; /* 포지션 고정 */ 
+	right: 8%; /* 오른쪽에서 2% - %도 할수 있음*/ 
+	bottom: 50px; /* 밑에서 5px */ 
+	display: ; /* 보여지지 없음 - 기본적으로 안보여지게 */ 
+	z-index: 9999; /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */ 
 }
 
 @media all and (min-width:768px) and (max-width:1023px){
