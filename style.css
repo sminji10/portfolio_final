@@ -75,13 +75,13 @@ li{
 }
 
 .menu_wrap{
-   position:absolute; 
-   cursor:pointer; 
-   right:150px; 
-   top:-400px; 
-   height:100vh; 
-   display:flex; 
-   align-items:center;
+   position: absolute; 
+   cursor: pointer; 
+   right: 150px; 
+   top: -400px; 
+   height: 100vh; 
+   display: flex; 
+   align-items: center;
 }
 
 .dashboard{
